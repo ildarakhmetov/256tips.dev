@@ -9,71 +9,24 @@
   {{ if og_image_width }}<meta property="og:image:width" content="{{ og_image_width }}">{{ /if }}
   {{ if og_image_height }}<meta property="og:image:height" content="{{ og_image_height }}">{{ /if }}
   {{ if og_image_alt }}<meta property="og:image:alt" content="{{ og_image_alt }}">{{ /if }}
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F3EDE1'/%3E%3Crect x='0' y='82' width='100' height='18' fill='%23FF4133'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia, serif' font-size='60' font-weight='900' fill='%230D0D0D'%3EIA%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="256 Tips for Developers" href="/feed.xml">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F3EDE1'/%3E%3Crect x='0' y='82' width='100' height='18' fill='%23FF4133'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia, serif' font-size='44' font-weight='900' fill='%230D0D0D'%3E256%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXPZSQ7489"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TXPZSQ7489');
-  </script>
+  <!-- Cloudflare Web Analytics beacon inserted in the deploy task -->
 </head>
 <body class="bg-paper font-sans antialiased">
   <nav class="border-b-4 border-black bg-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-8 py-4">
-      <div class="flex justify-between items-center gap-6">
-        <a href="/" class="font-display font-black text-xl md:text-2xl leading-none hover:text-riso-red transition-colors" style="font-variation-settings: 'SOFT' 80, 'opsz' 48, 'WONK' 1;">Ildar Akhmetov</a>
-
-        <!-- Desktop promoted links -->
-        <div class="hidden md:flex items-baseline gap-6">
-          <a href="/blog/" class="font-semibold hover:text-riso-red transition-colors">Blog</a>
-          <a href="/256tipsdev/" class="font-semibold hover:text-riso-red transition-colors">256 Tips</a>
-          <a href="/publications/" class="font-semibold hover:text-riso-red transition-colors">Publications</a>
-          <a href="/talks/" class="font-semibold hover:text-riso-red transition-colors">Talks</a>
-        </div>
-
-        <!-- Mobile hamburger -->
-        <button id="menu-toggle" class="md:hidden px-3 py-2 border-2 border-black bg-neo-yellow font-bold text-xl leading-none" aria-label="Toggle menu">☰</button>
-      </div>
-
-      <!-- Mobile expandable menu -->
-      <div id="menu" class="hidden md:hidden flex-col mt-4 pb-2">
-        <a href="/blog/" class="font-semibold py-2 border-b border-ink/20">Blog</a>
-        <a href="/256tipsdev/" class="font-semibold py-2 border-b border-ink/20">256 Tips</a>
-        <a href="/publications/" class="font-semibold py-2 border-b border-ink/20">Publications</a>
-        <a href="/talks/" class="font-semibold py-2 border-b border-ink/20">Talks</a>
-        <div class="pt-4 pb-1 text-xs uppercase tracking-widest font-bold opacity-60">Also</div>
-        <a href="/teaching/" class="py-2 text-sm">Teaching</a>
-        <a href="/programming/" class="py-2 text-sm">Programming</a>
-        <a href="/running/" class="py-2 text-sm">Running</a>
-        <a href="/traveling/" class="py-2 text-sm">Traveling</a>
+    <div class="max-w-6xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center gap-6">
+      <a href="/" class="font-display font-black text-xl md:text-2xl leading-none hover:text-riso-red transition-colors" style="font-variation-settings: 'SOFT' 80, 'opsz' 48, 'WONK' 1;">256 Tips <span class="text-riso-red">for Developers</span></a>
+      <div class="flex items-baseline gap-6">
+        <a href="/" class="font-semibold hover:text-riso-red transition-colors">All Tips</a>
+        <a href="https://ildarakhmetov.com/" class="font-semibold hover:text-riso-red transition-colors">About</a>
       </div>
     </div>
   </nav>
-
-  <script>
-    (function() {
-      const menuToggle = document.getElementById('menu-toggle');
-      const menu = document.getElementById('menu');
-      if (menuToggle && menu) {
-        menuToggle.addEventListener('click', function() {
-          if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            menu.classList.add('flex');
-          } else {
-            menu.classList.add('hidden');
-            menu.classList.remove('flex');
-          }
-        });
-      }
-    })();
-  </script>
 
   <main class="max-w-6xl mx-auto p-4 md:p-8 prose prose-lg prose-headings:font-black prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-ul:list-disc prose-ul:ml-6">
     {{ content }}
@@ -81,16 +34,10 @@
 
   <footer class="border-t-4 border-black bg-white mt-16">
     <div class="max-w-6xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row md:items-baseline gap-4 md:gap-8">
-      <span class="text-xs uppercase tracking-widest font-bold text-riso-red">Also</span>
-      <nav class="flex flex-wrap gap-x-6 gap-y-2 font-semibold text-sm">
-        <a href="/teaching/" class="hover:text-riso-red transition-colors">Teaching</a>
-        <a href="/programming/" class="hover:text-riso-red transition-colors">Programming</a>
-        <a href="/running/" class="hover:text-riso-red transition-colors">Running</a>
-        <a href="/traveling/" class="hover:text-riso-red transition-colors">Traveling</a>
-      </nav>
+      <span class="font-semibold text-sm">by <a href="https://ildarakhmetov.com/" class="underline hover:text-riso-red transition-colors">Ildar Akhmetov</a></span>
       <div class="md:ml-auto text-xs opacity-60 flex flex-col md:items-end gap-1">
-        <div>© 2026 Ildar Akhmetov</div>
-        <div>Built with Deno + Lume · <a href="https://github.com/ildarakhmetov/ildarakhmetov-com-v2" class="hover:text-riso-red transition-colors">Source</a></div>
+        <div>© 2026 Ildar Akhmetov · Tips CC BY-NC-ND 4.0</div>
+        <div>Built with Deno + Lume · <a href="https://github.com/ildarakhmetov/256tips.dev" class="hover:text-riso-red transition-colors">Source</a> · <a href="/feed.xml" class="hover:text-riso-red transition-colors">RSS</a></div>
       </div>
     </div>
   </footer>
