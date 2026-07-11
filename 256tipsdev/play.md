@@ -10,7 +10,7 @@ tags:
 - experimentation
 - junior-devs
 youtube_url: "https://youtube.com/shorts/T4H1xk0YXgw"
-url: /256tipsdev/play/
+url: /play/
 ---
 
 Who are the most efficient learners?

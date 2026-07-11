@@ -11,7 +11,7 @@ tags:
 - creativity
 - junior-devs
 youtube_url: "https://youtube.com/shorts/w_xpKpdMrDA"
-url: /256tipsdev/dont-let-the-average-redditor-think-for-you/
+url: /dont-let-the-average-redditor-think-for-you/
 ---
 
 "ChatGPT created such a novel idea for me yesterday!"

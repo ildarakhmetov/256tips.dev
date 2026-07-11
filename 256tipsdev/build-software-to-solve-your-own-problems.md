@@ -11,7 +11,7 @@ tags:
 - learning
 - junior-devs
 youtube_url: "https://youtube.com/shorts/0lm2UEImR4Y"
-url: /256tipsdev/build-software-to-solve-your-own-problems/
+url: /build-software-to-solve-your-own-problems/
 ---
 
 I received a comment on one of the video tips I posted on Instagram: "What to build next? What should my side project be?"

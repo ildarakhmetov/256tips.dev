@@ -10,7 +10,7 @@ tags:
 - mindset
 - junior-devs
 youtube_url: "https://youtube.com/shorts/KA06KBhx5ZM"
-url: /256tipsdev/think-about-yourself-in-1-2-5-10-50-years/
+url: /think-about-yourself-in-1-2-5-10-50-years/
 ---
 
 You're a student now, or maybe you already have a job as a junior dev.

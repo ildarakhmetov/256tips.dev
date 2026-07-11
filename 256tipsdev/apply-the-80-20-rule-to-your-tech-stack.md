@@ -11,7 +11,7 @@ tags:
 - tech-stack
 - junior-devs
 youtube_url: "https://youtube.com/shorts/OMkQS1uy4Ew"
-url: /256tipsdev/apply-the-80-20-rule-to-your-tech-stack/
+url: /apply-the-80-20-rule-to-your-tech-stack/
 ---
 
 "I know Java well, so I should build all my projects in Java." Or: "Choose a new language for every new project!" What's right?

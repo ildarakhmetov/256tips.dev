@@ -10,7 +10,7 @@ tags:
 - resume
 - junior-devs
 youtube_url: "https://youtube.com/shorts/i5zS9QqWWj8"
-url: /256tipsdev/dont-hide-your-waiter-job/
+url: /dont-hide-your-waiter-job/
 ---
 
 I am writing this at McDonald's on Main St in Vancouver -- a very no-frills kind of fast-food experience. You can imagine a similar fast-food joint with cheap food and minimal comfort in your country. Seems an appropriate place to write this tip.

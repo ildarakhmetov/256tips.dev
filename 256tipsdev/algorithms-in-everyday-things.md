@@ -10,7 +10,7 @@ tags:
 - data-structures
 - junior-devs
 youtube_url: "https://youtube.com/shorts/FUChSILK7FU"
-url: /256tipsdev/algorithms-in-everyday-things/
+url: /algorithms-in-everyday-things/
 ---
 
 You will never, ever need to implement basic graph algorithms at your job. And it's fine if you can't code Dijkstra or LCA right now (I'm not sure if I can; please don't tell anyone).

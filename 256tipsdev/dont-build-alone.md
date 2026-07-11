@@ -10,7 +10,7 @@ tags:
 - teamwork
 - junior-devs
 youtube_url: "https://youtube.com/shorts/10HmOUlmmkw"
-url: /256tipsdev/dont-build-alone/
+url: /dont-build-alone/
 ---
 
 "No one succeeds alone," was written on the wall of one of the best coworking spaces I've worked at (Work Nicer Edmonton, you're always in my heart).

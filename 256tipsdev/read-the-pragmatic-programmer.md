@@ -10,7 +10,7 @@ tags:
 - career
 - craft
 - junior-devs
-url: /256tipsdev/read-the-pragmatic-programmer/
+url: /read-the-pragmatic-programmer/
 youtube_url: "https://youtube.com/shorts/8IQIYa_-nws"
 ---
 

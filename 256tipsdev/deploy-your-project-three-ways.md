@@ -10,7 +10,7 @@ tags:
 - devops
 - projects
 - junior-devs
-url: /256tipsdev/deploy-your-project-three-ways/
+url: /deploy-your-project-three-ways/
 ---
 
 You built something? Always deploy it. Seeing your project live is the best feeling ever. And it's a fantastic exercise (and, with the free tiers that platforms provide, it should be pretty affordable).

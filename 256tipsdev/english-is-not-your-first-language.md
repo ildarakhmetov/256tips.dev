@@ -11,7 +11,7 @@ tags:
 - career
 - junior-devs
 youtube_url: "https://youtube.com/shorts/GxSifUBBuNs"
-url: /256tipsdev/english-is-not-your-first-language/
+url: /english-is-not-your-first-language/
 ---
 
 I am writing this in English. It is not my first language (actually, third). Am I at a disadvantage?

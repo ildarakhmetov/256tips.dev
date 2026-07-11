@@ -10,7 +10,7 @@ tags:
 - tools
 - junior-devs
 youtube_url: "https://youtube.com/shorts/jMlDy2EIOtM"
-url: /256tipsdev/spend-a-day-with-keyboard-only/
+url: /spend-a-day-with-keyboard-only/
 ---
 
 I challenge you: for one day, hide your mouse and disable your touchpad. Spend the whole day doing your normal development work with a keyboard only.

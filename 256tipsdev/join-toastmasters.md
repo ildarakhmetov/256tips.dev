@@ -11,7 +11,7 @@ tags:
 - career
 - junior-devs
 youtube_url: "https://youtu.be/bty_SVWgj58"
-url: /256tipsdev/join-toastmasters/
+url: /join-toastmasters/
 ---
 
 What is the most important skill for a junior developer in 2026?

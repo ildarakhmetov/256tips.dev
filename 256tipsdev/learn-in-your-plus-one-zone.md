@@ -10,7 +10,7 @@ tags:
 - mindset
 - career
 - junior-devs
-url: /256tipsdev/learn-in-your-plus-one-zone/
+url: /learn-in-your-plus-one-zone/
 ---
 
 As a junior dev, you're always learning something new (and, surprise, this will actually never stop -- principal engineers learn the most :-) )

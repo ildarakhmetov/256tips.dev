@@ -10,7 +10,7 @@ tags:
 - hardware
 - junior-devs
 youtube_url: "https://youtube.com/shorts/w0knYlDo9n8"
-url: /256tipsdev/buy-junk-from-facebook-marketplace/
+url: /buy-junk-from-facebook-marketplace/
 ---
 
 Or Craigslist, Kijiji, your local thrift shop, or a garage sale. Can even be a dusty box in your own basement!

@@ -11,7 +11,7 @@ tags:
 - programming-languages
 - junior-devs
 youtube_url: "https://youtube.com/shorts/rjFQn050Uso"
-url: /256tipsdev/try-an-esoteric-programming-language/
+url: /try-an-esoteric-programming-language/
 ---
 
 Some programming languages are not built for everyday use, but they make you think in ways you *never* thought were possible.

@@ -11,7 +11,7 @@ tags:
 - portfolio
 - junior-devs
 youtube_url: "https://youtube.com/shorts/N7lkpPmhsDE"
-url: /256tipsdev/your-github-profile-is-your-resume/
+url: /your-github-profile-is-your-resume/
 ---
 
 Your resume is not that PDF file that you submit when you apply for jobs.
@@ -24,7 +24,7 @@ First (and easy): the profile page. It's markdown, which means it's simple yet v
 
 Second (and this one will take more time): you should have a few public repos. An interested employer might open your GitHub and click around. Give them a choice -- have a few public repos (your projects!) featured in your profile. It's best if the projects are varied -- and if not all of them are classroom projects. This is the primary showcase of your experience.
 
-(What to do if you don't really have many projects to show? Start with one (see [Tip 176](/256tipsdev/build-software-to-solve-your-own-problems/) for some ideas), give it a little polish, and make it public!)
+(What to do if you don't really have many projects to show? Start with one (see [Tip 176](/build-software-to-solve-your-own-problems/) for some ideas), give it a little polish, and make it public!)
 
 Third (and the deepest) -- those green squares tell a story. What kind of developer are you? Do you commit only when your class projects are due? Or are you a curious builder?
 

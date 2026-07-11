@@ -10,7 +10,7 @@ tags:
 - career
 - junior-devs
 youtube_url: "https://youtube.com/shorts/-l8Mj1ZcSU0"
-url: /256tipsdev/find-a-mentor-be-a-mentor/
+url: /find-a-mentor-be-a-mentor/
 ---
 
 There is a pyramid of mentorship:

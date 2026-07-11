@@ -10,7 +10,7 @@ tags:
 - interviews
 - junior-devs
 youtube_url: "https://youtube.com/shorts/X8pdpKRI2ic"
-url: /256tipsdev/have-fun-with-leetcode/
+url: /have-fun-with-leetcode/
 ---
 
 Leetcode is a great collection of programming puzzles. The problems are fun to solve, and it's a nice way to flex your brain. The problems are well curated, the tests are extensive, and there is a huge community to practice and learn together.

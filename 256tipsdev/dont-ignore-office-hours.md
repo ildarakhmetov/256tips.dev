@@ -10,7 +10,7 @@ tags:
 - career
 - junior-devs
 youtube_url: "https://youtube.com/shorts/GY0okidPvKs"
-url: /256tipsdev/dont-ignore-office-hours/
+url: /dont-ignore-office-hours/
 ---
 
 When was the last time you attended your prof's office hours?
