@@ -1,0 +1,12 @@
+{
+  "name": "256tips-dev",
+  "compatibility_date": "2026-07-11",
+  "assets": {
+    "directory": "./_site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "256tips.dev", "custom_domain": true }
+  ]
+}

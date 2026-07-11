@@ -1,0 +1,31 @@
+name: Deploy to Cloudflare
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: "deploy"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v7
+
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v2
+
+      - name: Run tests
+        run: deno task test
+
+      - name: Build site
+        run: deno task build
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
