@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OG card — Tip __TIP_NUMBER__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Instrument+Sans:wght@400..900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+  }
+
+  body {
+    background: #F3EDE1;             /* paper */
+    color: #0D0D0D;                  /* ink */
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='1' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.05 0 0 0 0 0.05 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* Corner mark — matches home OG card */
+  .mark {
+    position: absolute;
+    top: 32px; left: 32px;
+    width: 18px; height: 18px;
+    background: #FF4133;
+    border: 3px solid #0D0D0D;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 80px;
+    min-height: 0;
+  }
+
+  /* Tip badge — same idiom as the live tip page (.bg-riso-red .border-4 .shadow-neo .font-black) */
+  .badge {
+    align-self: flex-start;
+    background: #FF4133;
+    color: #0D0D0D;
+    border: 4px solid #0D0D0D;
+    box-shadow: 6px 6px 0 0 #0D0D0D;
+    padding: 12px 28px;
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    letter-spacing: -0.01em;
+    margin-bottom: 36px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    font-variation-settings: 'SOFT' 90, 'opsz' 144, 'WONK' 1;
+    color: #0D0D0D;
+    word-break: break-word;
+    /* Reserve room for italic descenders so the next element doesn't crowd */
+    padding-bottom: 8px;
+  }
+  h1 .red { color: #FF4133; }
+
+  .byline {
+    margin-top: 32px;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #0D0D0D;
+    opacity: 0.7;
+  }
+  .byline .sep { color: #FF4133; margin: 0 12px; opacity: 1; }
+
+  /* Bottom red bar — directly mirrors home OG */
+  .bar {
+    height: 56px;
+    background: #FF4133;
+    border-top: 4px solid #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    flex-shrink: 0;
+    color: #F3EDE1;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <span class="mark" aria-hidden="true"></span>
+
+  <main>
+    <span class="badge">Tip __TIP_NUMBER__</span>
+    <h1>__TIP_TITLE__</h1>
+    <p class="byline">By Ildar Akhmetov <span class="sep">·</span> 256 Tips for Junior Devs</p>
+  </main>
+
+  <div class="bar">
+    <span>ildarakhmetov.com/256tipsdev</span>
+    <span>@256tipsdev</span>
+  </div>
+</body>
+</html>

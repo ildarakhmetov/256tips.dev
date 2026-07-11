@@ -1,0 +1,109 @@
+{
+  "imports": {
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.4/",
+    "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts",
+    "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.14.9/"
+  },
+  "permissions": {
+    "lume": {
+      "read": true,
+      "write": [
+        "./"
+      ],
+      "import": [
+        "cdn.jsdelivr.net:443",
+        "jsr.io:443",
+        "deno.land:443",
+        "esm.sh:443"
+      ],
+      "net": [
+        "0.0.0.0",
+        "cdn.jsdelivr.net:443",
+        "data.jsdelivr.com:443",
+        "jsr.io:443",
+        "deno.land:443",
+        "esm.sh:443",
+        "registry.npmjs.org:443"
+      ],
+      "env": true,
+      "run": true,
+      "ffi": true,
+      "sys": true
+    }
+  },
+  "tasks": {
+    "lume": {
+      "description": "Run Lume command",
+      "command": "deno run -P=lume lume/cli.ts"
+    },
+    "build": {
+      "description": "Build the site for production",
+      "command": "deno task lume"
+    },
+    "serve": {
+      "description": "Run and serve the site for development",
+      "command": "deno task lume -s"
+    },
+    "test": {
+      "description": "Run tests",
+      "command": "deno test --allow-read --allow-env --allow-net"
+    },
+    "og": {
+      "description": "Render Open Graph social-share cards from _og/*.html into assets/img/og/",
+      "command": "google-chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,720 --screenshot=_og/home.png \"file://$(pwd)/_og/home.html\" && magick _og/home.png -crop 1200x630+0+0 +repage -strip -quality 88 -sampling-factor 4:2:0 -interlace JPEG assets/img/og/home.jpg && echo 'Rendered: assets/img/og/home.jpg'"
+    },
+    "avatar": {
+      "description": "Render YouTube channel avatar from _og/avatar.html into assets/img/avatar/256.png",
+      "command": "mkdir -p assets/img/avatar && google-chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=800,880 --screenshot=_og/avatar.png \"file://$(pwd)/_og/avatar.html\" && magick _og/avatar.png -crop 800x800+0+0 +repage -strip assets/img/avatar/256.png && echo 'Rendered: assets/img/avatar/256.png'"
+    },
+    "banner": {
+      "description": "Render YouTube channel banner from _og/banner.html into assets/img/banner/256-banner.jpg",
+      "command": "mkdir -p assets/img/banner && google-chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=2560,1530 --screenshot=_og/banner.png \"file://$(pwd)/_og/banner.html\" && magick _og/banner.png -crop 2560x1440+0+0 +repage -strip -quality 90 -sampling-factor 4:2:0 -interlace JPEG assets/img/banner/256-banner.jpg && echo 'Rendered: assets/img/banner/256-banner.jpg'"
+    },
+    "tip-cards": {
+      "description": "Render per-tip Open Graph cards from 256tipsdev/*.md into assets/img/og/tips/ (pass a slug to render just one: deno task tip-cards <slug>)",
+      "command": "deno run --allow-read --allow-write --allow-run _og/render-tip-cards.ts"
+    },
+    "archive-card": {
+      "description": "Render the /256tipsdev/ archive page Open Graph card with current progress grid",
+      "command": "deno run --allow-read --allow-write --allow-run _og/render-archive-card.ts"
+    },
+    "related": {
+      "description": "Compute the per-tip 'Related Tips' index from OpenRouter embeddings into _og/related.json (reads OPENROUTER_API_KEY from .env or the environment)",
+      "command": "deno run --env-file --allow-read --allow-write --allow-env --allow-net _og/build-related.ts"
+    },
+    "reel-cover": {
+      "description": "Render a vertical 1080x1920 video cover for a tip (YT Shorts / Reels / TikTok): deno task reel-cover <slug> --video <path> [--at <seconds>]",
+      "command": "deno run --allow-read --allow-write --allow-run _og/render-reel-cover.ts"
+    }
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "lume"
+  },
+  "unstable": [
+    "temporal",
+    "fmt-component"
+  ],
+  "lint": {
+    "include": ["_config.ts", "_lib/"],
+    "plugins": [
+      "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.4/lint.ts"
+    ],
+    "rules": {
+      "exclude": [
+        "no-import-prefix"
+      ]
+    }
+  },
+  "fmt": {
+    "include": ["_config.ts", "_lib/"]
+  },
+  "lock": {
+    "path": "./deno.lock",
+    "frozen": true
+  }
+}

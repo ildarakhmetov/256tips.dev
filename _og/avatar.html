@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YouTube avatar — 256.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+  }
+
+  body {
+    background: #FF4133;             /* riso-red */
+    color: #0D0D0D;                  /* ink */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Inscribed-circle safe zone marker — only visible during dev, hidden at render */
+  /* Uncomment to debug clipping:
+  body::before {
+    content: "";
+    position: absolute; inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,0.4);
+    pointer-events: none;
+  }
+  */
+
+  .mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 460px;
+    line-height: 0.82;
+    letter-spacing: -0.06em;
+    font-variation-settings: 'SOFT' 90, 'opsz' 144, 'WONK' 1;
+    color: #0D0D0D;
+    white-space: nowrap;
+    /* Slight optical centering — italic descender + period weight pull right */
+    transform: translateX(-12px);
+  }
+
+  .mark .dot {
+    color: #F3EDE1;                  /* paper — the chromatic kiss */
+    margin-left: -0.04em;            /* tighten period to the 6 */
+  }
+</style>
+</head>
+<body>
+  <span class="mark">256<span class="dot">.</span></span>
+</body>
+</html>

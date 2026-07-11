@@ -1,0 +1,6 @@
+_site/
+_cache/
+.env
+_og/*.png
+_og/.cache/
+_covers/

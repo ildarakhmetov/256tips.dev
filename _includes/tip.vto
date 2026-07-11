@@ -1,0 +1,101 @@
+---
+layout: layout.vto
+---
+
+{{ set prevTip = search.previousPage(url, "tip", "date=asc") }}
+{{ set nextTip = search.nextPage(url, "tip", "date=asc") }}
+
+<article class="max-w-4xl mx-auto">
+  <!-- Tip Header -->
+  <header class="mb-8">
+    {{ if tip_number !== undefined }}
+    <div class="mb-4">
+      <span class="inline-block px-4 py-2 bg-riso-red border-4 border-black shadow-neo font-black text-2xl">
+        Tip {{ tip_number }}
+      </span>
+    </div>
+    {{ /if }}
+
+    <h1 class="text-3xl md:text-5xl font-black mb-4">{{ title }}</h1>
+
+    {{ if date }}
+    <div class="mb-4 flex flex-wrap items-center gap-3">
+      <time class="px-3 py-1 bg-neo-yellow border-2 border-black font-bold text-sm">
+        {{ date |> date("HUMAN_DATE") }}
+      </time>
+      <span class="text-sm text-ink opacity-60">by Ildar Akhmetov</span>
+    </div>
+    {{ /if }}
+  </header>
+
+  <!-- Watch on YouTube CTA -->
+  {{ if youtube_url }}
+  <div class="mb-8">
+    <a href="{{ youtube_url }}" target="_blank" rel="noopener noreferrer"
+       class="inline-block px-6 py-3 bg-riso-red border-4 border-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all font-black">
+      ▶ Watch on YouTube
+    </a>
+  </div>
+  {{ /if }}
+
+  <!-- Tip Content -->
+  <div class="prose prose-lg max-w-none
+              prose-headings:font-black
+              prose-h1:text-4xl
+              prose-h2:text-3xl
+              prose-h3:text-2xl
+              prose-h4:text-xl
+              prose-a:text-black prose-a:underline prose-a:font-bold prose-a:hover:bg-neo-yellow
+              prose-strong:font-black
+              prose-img:border-4 prose-img:border-black prose-img:shadow-neo
+              prose-code:bg-paper prose-code:text-ink prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-none prose-code:border prose-code:border-ink/30
+              prose-pre:border-4 prose-pre:border-black prose-pre:shadow-neo prose-pre:bg-white
+              prose-blockquote:border-l-4 prose-blockquote:border-riso-red prose-blockquote:bg-paper prose-blockquote:italic
+              prose-ul:list-disc prose-ul:ml-6
+              prose-ol:list-decimal prose-ol:ml-6">
+    {{ content }}
+  </div>
+
+  {{ if relatedTips && relatedTips.length }}
+  <!-- Related Tips -->
+  <section class="mt-12 pt-8 border-t-4 border-black">
+    <h2 class="text-2xl font-black mb-4">Related Tips</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {{ for related of relatedTips }}
+      <a href="{{ related.url }}" class="block p-4 border-4 border-black bg-white hover:bg-neo-yellow shadow-neo transition-colors">
+        <div class="text-xs font-bold opacity-60 mb-1">Tip {{ related.tip_number }}</div>
+        <div class="font-black">{{ related.title }}</div>
+      </a>
+      {{ /for }}
+    </div>
+  </section>
+  {{ /if }}
+
+  <!-- Newsletter Signup -->
+  {{ include "newsletter-signup.vto" }}
+
+  <!-- Pager: previous · all tips · next (publication order) -->
+  <nav class="mt-12 pt-6 border-t-2 border-black flex items-center justify-between gap-3 font-bold">
+    {{ if prevTip }}
+    <a href="{{ prevTip.url }}"
+       class="px-2 py-1 border-2 border-transparent hover:border-black hover:bg-neo-yellow transition-colors">
+      ← Tip {{ prevTip.tip_number }}
+    </a>
+    {{ else }}
+    <span></span>
+    {{ /if }}
+
+    <a href="/256tipsdev/" class="px-3 py-1 border-2 border-black bg-white hover:bg-neo-yellow shadow-neo hover:shadow-none hover:translate-x-px hover:translate-y-px transition-all">
+      All Tips
+    </a>
+
+    {{ if nextTip }}
+    <a href="{{ nextTip.url }}"
+       class="px-2 py-1 border-2 border-transparent hover:border-black hover:bg-neo-yellow transition-colors">
+      Tip {{ nextTip.tip_number }} →
+    </a>
+    {{ else }}
+    <span></span>
+    {{ /if }}
+  </nav>
+</article>

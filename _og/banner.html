@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YouTube banner — 256 Tips for Junior Devs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 2560px;
+    height: 1440px;
+    overflow: hidden;
+  }
+
+  body {
+    background: #0D0D0D;             /* ink */
+    color: #F3EDE1;                  /* paper */
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    /* Subtle warm grain on ink — same noise SVG as site, lighter alpha */
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='1' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.93 0 0 0 0 0.88 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    position: relative;
+  }
+
+  /* ============================================================
+     TV-ONLY ZONES (above and below the 1546×423 safe area)
+     Visible only on large displays / TV crops.
+     ============================================================ */
+
+  /* Masthead bar — sits in the upper TV-only band.
+     Color uses rgba alpha (not parent `opacity`) so any nested
+     accent (e.g. a red separator) renders at full strength. */
+  .top-bar {
+    position: absolute;
+    top: 96px; left: 120px; right: 120px;
+    padding-bottom: 24px;
+    border-bottom: 3px solid rgba(243, 237, 225, 0.75);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(243, 237, 225, 0.75);
+  }
+
+  /* Riso-red footer bar — references home OG card's bottom bar motif */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 88px;
+    background: #FF4133;
+    color: #F3EDE1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+  .bottom-bar .url { letter-spacing: 0.16em; }
+
+  /* ============================================================
+     SAFE AREA — 1546×423 centered. Visible on every device.
+     Only thing mobile users see.
+     ============================================================ */
+
+  .frame {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1546px;
+    height: 423px;
+    padding: 24px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 156px;
+    line-height: 0.88;
+    letter-spacing: -0.035em;
+    font-variation-settings: 'SOFT' 90, 'opsz' 144, 'WONK' 1;
+    color: #F3EDE1;
+  }
+  h1 .red { color: #FF4133; }
+
+  /* Meta row — uses rgba color, not container opacity, so the red
+     separator stays vivid against the muted mono caps. */
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(243, 237, 225, 0.85);
+  }
+  .meta-row .handle { color: #F3EDE1; }    /* full strength — channel anchor */
+  .meta-row .sep {
+    color: #FF4133;
+    margin: 0 14px;
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <span>Est. 2026</span>
+    <span>youtube.com/@256tipsdev</span>
+  </div>
+
+  <div class="frame">
+    <h1>256 Tips for<br>Junior Devs<span class="red">.</span></h1>
+    <div class="meta-row">
+      <span>By Ildar Akhmetov <span class="sep">·</span> One tip at a time</span>
+      <span class="handle">@256tipsdev</span>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <span>256 Tips for Junior Devs</span>
+    <span class="url">ildarakhmetov.com</span>
+  </div>
+</body>
+</html>

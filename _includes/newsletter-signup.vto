@@ -1,0 +1,33 @@
+<section id="subscribe" class="my-12 not-prose scroll-mt-8">
+  <div class="bg-neo-yellow border-4 border-black shadow-neo-lg p-6 md:p-8">
+    <h2 class="text-2xl md:text-3xl font-black mb-2">Get tips in your inbox</h2>
+    <p class="mb-6 font-bold opacity-75">Two new tips every week.</p>
+
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/256tipsdev"
+      method="post"
+      class="embeddable-buttondown-form flex flex-col sm:flex-row gap-3"
+    >
+      <label for="bd-email" class="sr-only">Email address</label>
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        required
+        placeholder="you@example.com"
+        class="flex-1 px-4 py-3 border-4 border-black bg-white font-bold text-lg focus:outline-none focus:shadow-neo transition-all"
+      />
+      <input
+        type="submit"
+        value="Subscribe"
+        class="px-6 py-3 bg-riso-red border-4 border-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all font-black text-lg cursor-pointer"
+      />
+    </form>
+
+    <p class="mt-4 text-xs opacity-60">
+      <a href="https://buttondown.com/refer/256tipsdev" target="_blank" rel="noopener noreferrer" class="underline">
+        Powered by Buttondown
+      </a>
+    </p>
+  </div>
+</section>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Reel cover — Tip __TIP_NUMBER__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..900,0..100,0..1;1,9..144,400..900,0..100,0..1&family=Instrument+Sans:wght@400..900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+  }
+
+  body {
+    color: #0D0D0D;
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    position: relative;
+  }
+
+  /* Full-bleed video frame */
+  .frame {
+    position: absolute;
+    inset: 0;
+    background-image: url("__FRAME_URL__");
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Subtle top+bottom scrim: unifies arbitrary frames and lets the handle pop
+     without hiding the image. */
+  .scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.28) 0%,
+      rgba(0,0,0,0.05) 28%,
+      rgba(0,0,0,0.05) 70%,
+      rgba(0,0,0,0.35) 100%
+    );
+  }
+
+  main {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Bias content into the upper-middle; the bottom ~30% is left clear for
+       the platform caption/username UI, the right edge for action buttons. */
+    justify-content: flex-start;
+    padding: 300px 96px 0;
+  }
+
+  /* Neo paper "card" floating over the frame */
+  .card {
+    width: 100%;
+    background: #F3EDE1;                 /* paper */
+    border: 12px solid #0D0D0D;
+    box-shadow: 24px 24px 0 0 #0D0D0D;
+    padding: 64px 64px 72px;
+    /* paper grain, same idiom as the OG cards */
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='1' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.05 0 0 0 0 0.05 0 0 0 0 0.05 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .badge {
+    display: inline-block;
+    background: #FF4133;
+    color: #0D0D0D;
+    border: 6px solid #0D0D0D;
+    box-shadow: 10px 10px 0 0 #0D0D0D;
+    padding: 16px 36px;
+    font-weight: 900;
+    font-size: 46px;
+    letter-spacing: -0.01em;
+    margin-bottom: 52px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 116px;
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    font-variation-settings: 'SOFT' 90, 'opsz' 144, 'WONK' 1;
+    word-break: break-word;
+    padding-bottom: 10px;
+  }
+  h1 .red { color: #FF4133; }
+
+  /* Handle chip — legible over the raw frame below the card */
+  .handle {
+    margin-top: 56px;
+    background: #0D0D0D;
+    color: #F3EDE1;
+    border: 5px solid #0D0D0D;
+    padding: 18px 34px;
+    font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="frame" aria-hidden="true"></div>
+  <div class="scrim" aria-hidden="true"></div>
+
+  <main>
+    <div class="card">
+      <span class="badge">Tip __TIP_NUMBER__</span>
+      <h1>__TIP_TITLE__</h1>
+    </div>
+    <span class="handle">@256tipsdev</span>
+  </main>
+</body>
+</html>
