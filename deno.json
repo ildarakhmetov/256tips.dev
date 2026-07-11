@@ -48,10 +48,6 @@
       "description": "Run tests",
       "command": "deno test --allow-read --allow-env --allow-net"
     },
-    "og": {
-      "description": "Render Open Graph social-share cards from _og/*.html into assets/img/og/",
-      "command": "google-chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,720 --screenshot=_og/home.png \"file://$(pwd)/_og/home.html\" && magick _og/home.png -crop 1200x630+0+0 +repage -strip -quality 88 -sampling-factor 4:2:0 -interlace JPEG assets/img/og/home.jpg && echo 'Rendered: assets/img/og/home.jpg'"
-    },
     "avatar": {
       "description": "Render YouTube channel avatar from _og/avatar.html into assets/img/avatar/256.png",
       "command": "mkdir -p assets/img/avatar && google-chrome --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=800,880 --screenshot=_og/avatar.png \"file://$(pwd)/_og/avatar.html\" && magick _og/avatar.png -crop 800x800+0+0 +repage -strip assets/img/avatar/256.png && echo 'Rendered: assets/img/avatar/256.png'"
