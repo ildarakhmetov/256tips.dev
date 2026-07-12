@@ -10,6 +10,7 @@ tags:
 - procrastination
 - mindfulness
 url: /see-where-procrastination-leads-you/
+youtube_url: "https://youtube.com/shorts/-50BXR8UlDk"
 ---
 
 What is your favorite way to procrastinate?
