@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-The public site for **256 Tips for Developers** — short career/craft advice
+The public site for **256 Tips for Junior Devs** — short career/craft advice
 for junior developers, one tip at a time, each with an accompanying YouTube
 Short. Built with Deno + Lume (static site generator) and deployed to
 Cloudflare at https://256tips.dev/. Code is MIT; the tips themselves are

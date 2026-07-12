@@ -28,7 +28,7 @@ site.use(feed({
   sort: "date=desc",
   limit: 20,
   info: {
-    title: "256 Tips for Developers",
+    title: "256 Tips for Junior Devs",
     description:
       "256 short, practical tips for junior developers — one at a time.",
   },
@@ -95,7 +95,7 @@ site.preprocess([".html"], (pages) => {
       if (!data.metas) {
         data.metas = {};
       }
-      data.metas.title = `${data.title} | 256 Tips for Developers`;
+      data.metas.title = `${data.title} | 256 Tips for Junior Devs`;
     }
 
     // Auto-wire per-tip Open Graph cards. `deno task tip-cards` renders
