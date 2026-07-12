@@ -53,7 +53,7 @@ tips arrive here already finished.
 ├── assets/                        # Static assets, including generated OG images
 ├── index.vto                       # Homepage — also the tip archive / progress grid
 ├── 404.md
-└── .github/workflows/               # CI/CD (deploy, dependency updates)
+└── .github/workflows/               # CI (PRs) + deploy (push to main)
 ```
 
 ## Development Commands
@@ -227,8 +227,11 @@ The whole run takes roughly **~2 minutes**. There is no staging environment —
 review locally with `deno task serve` before pushing, and only push on an
 explicit go-ahead when publishing a tip.
 
-Cloudflare Web Analytics is auto-injected at the edge for this zone — there is
-no beacon snippet to add or maintain in `_includes/layout.vto`.
+Analytics is Cloudflare Web Analytics via a manual beacon snippet in
+`_includes/layout.vto` — edge auto-injection does not reach Workers-served
+HTML, so the `<script>` beacon there must be kept whenever the layout is
+edited. The beacon token is public by design (it's client-side and only
+identifies the site to Cloudflare's collector).
 
 ## Environment Variables
 

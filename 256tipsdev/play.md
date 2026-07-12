@@ -3,7 +3,7 @@ layout: tip.vto
 title: "Play!"
 tip_number: 224
 date: 2026-05-10 12:00:00
-description: "The most efficient learners aren't straight-A classmates — they're babies, who learn by playing. Don't start a new framework with a YouTube tutorial; tinker first."
+description: "The most efficient learners aren't straight-A classmates — they're babies who learn by playing. Don't start a framework with a tutorial; tinker first."
 tags:
 - tip
 - learning
