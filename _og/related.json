@@ -1,88 +1,4 @@
 {
-  "find-a-mentor-be-a-mentor": [
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
-    },
-    {
-      "slug": "learn-in-your-plus-one-zone",
-      "tip_number": 240
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
-    }
-  ],
-  "buy-junk-from-facebook-marketplace": [
-    {
-      "slug": "deploy-your-project-three-ways",
-      "tip_number": 40
-    },
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
-    },
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    }
-  ],
-  "have-fun-with-leetcode": [
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
-    },
-    {
-      "slug": "play",
-      "tip_number": 224
-    },
-    {
-      "slug": "learn-in-your-plus-one-zone",
-      "tip_number": 240
-    }
-  ],
-  "dont-build-alone": [
-    {
-      "slug": "build-software-to-solve-your-own-problems",
-      "tip_number": 176
-    },
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    },
-    {
-      "slug": "play",
-      "tip_number": 224
-    }
-  ],
-  "spend-a-day-with-keyboard-only": [
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
-    },
-    {
-      "slug": "dont-build-alone",
-      "tip_number": 192
-    },
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    }
-  ],
-  "dont-ignore-office-hours": [
-    {
-      "slug": "dont-build-alone",
-      "tip_number": 192
-    },
-    {
-      "slug": "dont-let-the-average-redditor-think-for-you",
-      "tip_number": 16
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
-    }
-  ],
   "algorithms-in-everyday-things": [
     {
       "slug": "think-about-yourself-in-1-2-5-10-50-years",
@@ -97,34 +13,6 @@
       "tip_number": 224
     }
   ],
-  "play": [
-    {
-      "slug": "learn-in-your-plus-one-zone",
-      "tip_number": 240
-    },
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    },
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
-    }
-  ],
-  "dont-let-the-average-redditor-think-for-you": [
-    {
-      "slug": "dont-build-alone",
-      "tip_number": 192
-    },
-    {
-      "slug": "disagree-with-your-boss",
-      "tip_number": 208
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
-    }
-  ],
   "apply-the-80-20-rule-to-your-tech-stack": [
     {
       "slug": "deploy-your-project-three-ways",
@@ -137,34 +25,6 @@
     {
       "slug": "play",
       "tip_number": 224
-    }
-  ],
-  "disagree-with-your-boss": [
-    {
-      "slug": "dont-let-the-average-redditor-think-for-you",
-      "tip_number": 16
-    },
-    {
-      "slug": "dont-build-alone",
-      "tip_number": 192
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
-    }
-  ],
-  "dont-hide-your-waiter-job": [
-    {
-      "slug": "your-github-profile-is-your-resume",
-      "tip_number": 8
-    },
-    {
-      "slug": "do-a-hackathon",
-      "tip_number": 168
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
     }
   ],
   "become-antifragile": [
@@ -191,88 +51,18 @@
       "tip_number": 144
     },
     {
-      "slug": "disagree-with-your-boss",
-      "tip_number": 208
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232
     }
   ],
-  "english-is-not-your-first-language": [
+  "buy-junk-from-facebook-marketplace": [
     {
-      "slug": "disagree-with-your-boss",
-      "tip_number": 208
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
-    },
-    {
-      "slug": "dont-let-the-average-redditor-think-for-you",
-      "tip_number": 16
-    }
-  ],
-  "learn-in-your-plus-one-zone": [
-    {
-      "slug": "play",
-      "tip_number": 224
-    },
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
-    }
-  ],
-  "your-github-profile-is-your-resume": [
-    {
-      "slug": "dont-hide-your-waiter-job",
-      "tip_number": 80
-    },
-    {
-      "slug": "do-a-hackathon",
-      "tip_number": 168
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
-    }
-  ],
-  "join-toastmasters": [
-    {
-      "slug": "do-a-hackathon",
-      "tip_number": 168
-    },
-    {
-      "slug": "dont-build-alone",
-      "tip_number": 192
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
-    }
-  ],
-  "try-an-esoteric-programming-language": [
-    {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
-    },
-    {
-      "slug": "play",
-      "tip_number": 224
+      "slug": "deploy-your-project-three-ways",
+      "tip_number": 40
     },
     {
       "slug": "algorithms-in-everyday-things",
       "tip_number": 96
-    }
-  ],
-  "think-about-yourself-in-1-2-5-10-50-years": [
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
-    },
-    {
-      "slug": "learn-in-your-plus-one-zone",
-      "tip_number": 240
     },
     {
       "slug": "apply-the-80-20-rule-to-your-tech-stack",
@@ -293,6 +83,20 @@
       "tip_number": 224
     }
   ],
+  "disagree-with-your-boss": [
+    {
+      "slug": "dont-let-the-average-redditor-think-for-you",
+      "tip_number": 16
+    },
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
+  ],
   "do-a-hackathon": [
     {
       "slug": "join-toastmasters",
@@ -307,6 +111,132 @@
       "tip_number": 192
     }
   ],
+  "dont-build-alone": [
+    {
+      "slug": "build-software-to-solve-your-own-problems",
+      "tip_number": 176
+    },
+    {
+      "slug": "play",
+      "tip_number": 224
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
+  ],
+  "dont-hide-your-waiter-job": [
+    {
+      "slug": "your-github-profile-is-your-resume",
+      "tip_number": 8
+    },
+    {
+      "slug": "do-a-hackathon",
+      "tip_number": 168
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
+  ],
+  "dont-ignore-office-hours": [
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
+    },
+    {
+      "slug": "dont-let-the-average-redditor-think-for-you",
+      "tip_number": 16
+    },
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    }
+  ],
+  "dont-let-the-average-redditor-think-for-you": [
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
+    },
+    {
+      "slug": "disagree-with-your-boss",
+      "tip_number": 208
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
+  ],
+  "english-is-not-your-first-language": [
+    {
+      "slug": "disagree-with-your-boss",
+      "tip_number": 208
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    },
+    {
+      "slug": "dont-let-the-average-redditor-think-for-you",
+      "tip_number": 16
+    }
+  ],
+  "find-a-mentor-be-a-mentor": [
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    },
+    {
+      "slug": "learn-in-your-plus-one-zone",
+      "tip_number": 240
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
+  ],
+  "have-fun-with-leetcode": [
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "play",
+      "tip_number": 224
+    },
+    {
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232
+    }
+  ],
+  "join-toastmasters": [
+    {
+      "slug": "do-a-hackathon",
+      "tip_number": 168
+    },
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
+    },
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    }
+  ],
+  "learn-in-your-plus-one-zone": [
+    {
+      "slug": "play",
+      "tip_number": 224
+    },
+    {
+      "slug": "apply-the-80-20-rule-to-your-tech-stack",
+      "tip_number": 144
+    },
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    }
+  ],
   "read-the-pragmatic-programmer": [
     {
       "slug": "play",
@@ -319,6 +249,90 @@
     {
       "slug": "apply-the-80-20-rule-to-your-tech-stack",
       "tip_number": 144
+    }
+  ],
+  "spend-a-day-with-keyboard-only": [
+    {
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232
+    },
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
+    }
+  ],
+  "think-about-yourself-in-1-2-5-10-50-years": [
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "learn-in-your-plus-one-zone",
+      "tip_number": 240
+    },
+    {
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232
+    }
+  ],
+  "try-an-esoteric-programming-language": [
+    {
+      "slug": "apply-the-80-20-rule-to-your-tech-stack",
+      "tip_number": 144
+    },
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "play",
+      "tip_number": 224
+    }
+  ],
+  "your-github-profile-is-your-resume": [
+    {
+      "slug": "dont-hide-your-waiter-job",
+      "tip_number": 80
+    },
+    {
+      "slug": "do-a-hackathon",
+      "tip_number": 168
+    },
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    }
+  ],
+  "play": [
+    {
+      "slug": "learn-in-your-plus-one-zone",
+      "tip_number": 240
+    },
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "apply-the-80-20-rule-to-your-tech-stack",
+      "tip_number": 144
+    }
+  ],
+  "see-where-procrastination-leads-you": [
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    },
+    {
+      "slug": "apply-the-80-20-rule-to-your-tech-stack",
+      "tip_number": 144
+    },
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192
     }
   ]
 }
