@@ -11,6 +11,7 @@ tags:
 - projects
 - legacy-code
 url: /work-with-a-legacy-codebase/
+youtube_url: "https://youtube.com/shorts/1E353VDbUzA"
 ---
 
 Building new projects is nice. But *real* learning happens when you touch an old, ugly, tangled... *real* codebase! As a developer, you will almost never start new projects from scratch. Mostly, you'll be adding to existing codebases. So, that is what you should practice.
