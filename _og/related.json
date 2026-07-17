@@ -9,8 +9,8 @@
       "tip_number": 64
     },
     {
-      "slug": "play",
-      "tip_number": 224
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     }
   ],
   "apply-the-80-20-rule-to-your-tech-stack": [
@@ -29,16 +29,16 @@
   ],
   "become-antifragile": [
     {
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
+    },
+    {
       "slug": "play",
       "tip_number": 224
     },
     {
       "slug": "join-toastmasters",
       "tip_number": 136
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
     }
   ],
   "build-software-to-solve-your-own-problems": [
@@ -61,12 +61,12 @@
       "tip_number": 40
     },
     {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     },
     {
-      "slug": "apply-the-80-20-rule-to-your-tech-stack",
-      "tip_number": 144
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
     }
   ],
   "deploy-your-project-three-ways": [
@@ -79,8 +79,8 @@
       "tip_number": 128
     },
     {
-      "slug": "play",
-      "tip_number": 224
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     }
   ],
   "disagree-with-your-boss": [
@@ -103,12 +103,12 @@
       "tip_number": 136
     },
     {
-      "slug": "your-github-profile-is-your-resume",
-      "tip_number": 8
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     },
     {
-      "slug": "dont-build-alone",
-      "tip_number": 192
+      "slug": "your-github-profile-is-your-resume",
+      "tip_number": 8
     }
   ],
   "dont-build-alone": [
@@ -127,16 +127,16 @@
   ],
   "dont-hide-your-waiter-job": [
     {
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
+    },
+    {
       "slug": "your-github-profile-is-your-resume",
       "tip_number": 8
     },
     {
       "slug": "do-a-hackathon",
       "tip_number": 168
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160
     }
   ],
   "dont-ignore-office-hours": [
@@ -261,8 +261,8 @@
       "tip_number": 96
     },
     {
-      "slug": "dont-build-alone",
-      "tip_number": 192
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     }
   ],
   "think-about-yourself-in-1-2-5-10-50-years": [
@@ -271,12 +271,12 @@
       "tip_number": 96
     },
     {
-      "slug": "learn-in-your-plus-one-zone",
-      "tip_number": 240
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
     },
     {
-      "slug": "see-where-procrastination-leads-you",
-      "tip_number": 232
+      "slug": "learn-in-your-plus-one-zone",
+      "tip_number": 240
     }
   ],
   "try-an-esoteric-programming-language": [
@@ -295,16 +295,16 @@
   ],
   "your-github-profile-is-your-resume": [
     {
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24
+    },
+    {
       "slug": "dont-hide-your-waiter-job",
       "tip_number": 80
     },
     {
       "slug": "do-a-hackathon",
       "tip_number": 168
-    },
-    {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200
     }
   ],
   "play": [
@@ -333,6 +333,20 @@
     {
       "slug": "dont-build-alone",
       "tip_number": 192
+    }
+  ],
+  "work-with-a-legacy-codebase": [
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200
+    },
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "your-github-profile-is-your-resume",
+      "tip_number": 8
     }
   ]
 }
