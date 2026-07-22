@@ -348,5 +348,19 @@
       "slug": "your-github-profile-is-your-resume",
       "tip_number": 8
     }
+  ],
+  "find-your-most-productive-time": [
+    {
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232
+    },
+    {
+      "slug": "spend-a-day-with-keyboard-only",
+      "tip_number": 32
+    },
+    {
+      "slug": "dont-ignore-office-hours",
+      "tip_number": 160
+    }
   ]
 }
