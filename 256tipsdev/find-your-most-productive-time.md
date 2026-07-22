@@ -9,6 +9,7 @@ tags:
 - productivity
 - habits
 url: /find-your-most-productive-time/
+youtube_url: "https://youtube.com/shorts/2M2AcpEmzqA"
 ---
 
 A few years ago, I lived in a small town in northern India. The only time I could get online at a satisfactory speed was from 3am to 8am. So I had to adapt. I had to wake up at 3 to get any work done.
