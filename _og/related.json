@@ -23,8 +23,8 @@
       "tip_number": 240
     },
     {
-      "slug": "play",
-      "tip_number": 224
+      "slug": "choose-the-best-language-for-the-task",
+      "tip_number": 88
     }
   ],
   "become-antifragile": [
@@ -361,6 +361,20 @@
     {
       "slug": "dont-ignore-office-hours",
       "tip_number": 160
+    }
+  ],
+  "choose-the-best-language-for-the-task": [
+    {
+      "slug": "apply-the-80-20-rule-to-your-tech-stack",
+      "tip_number": 144
+    },
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96
+    },
+    {
+      "slug": "play",
+      "tip_number": 224
     }
   ]
 }
