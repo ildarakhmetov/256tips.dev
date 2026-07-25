@@ -11,6 +11,7 @@ tags:
 - learning
 - junior-devs
 url: /choose-the-best-language-for-the-task/
+youtube_url: "https://youtube.com/shorts/bGo5wto5HMw"
 ---
 
 I was exploring the codebase for Immich (an open-source replacement for Google Photos) the other day.
