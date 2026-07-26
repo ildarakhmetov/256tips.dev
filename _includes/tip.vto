@@ -56,6 +56,13 @@ layout: layout.vto
     {{ content }}
   </div>
 
+  <!-- Newsletter Signup -->
+  {{ set tipsToCome = 256 - search.pages("tip").length }}
+  {{ include "newsletter-signup.vto" {
+    heading: "Liked this one? There are " + tipsToCome + " more coming.",
+    sub: "Two new tips every week, straight to your inbox."
+  } }}
+
   {{ if relatedTips && relatedTips.length }}
   <!-- Related Tips -->
   <section class="mt-12 pt-8 border-t-4 border-black">
@@ -70,9 +77,6 @@ layout: layout.vto
     </div>
   </section>
   {{ /if }}
-
-  <!-- Newsletter Signup -->
-  {{ include "newsletter-signup.vto" }}
 
   <!-- Pager: previous · all tips · next (publication order) -->
   <nav class="mt-12 pt-6 border-t-2 border-black flex items-center justify-between gap-3 font-bold">
