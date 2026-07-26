@@ -70,7 +70,12 @@ layout: layout.vto
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       {{ for related of relatedTips }}
       <a href="{{ related.url }}" class="block p-4 border-4 border-black bg-white hover:bg-neo-yellow shadow-neo transition-colors">
-        <div class="text-xs font-bold opacity-60 mb-1">Tip {{ related.tip_number }}</div>
+        <div class="mb-1 flex items-baseline justify-between gap-2 text-xs opacity-60">
+          <span class="font-bold">Tip {{ related.tip_number }}</span>
+          {{ if related.score !== undefined }}
+          <span class="font-mono">cos θ = {{ related.score.toFixed(3) }}</span>
+          {{ /if }}
+        </div>
         <div class="font-black">{{ related.title }}</div>
       </a>
       {{ /for }}

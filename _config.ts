@@ -43,7 +43,7 @@ site.use(feed({
 // rather than from _data/ so it isn't auto-exposed as a global (which would
 // collide with the `related` front-matter override). Missing file is fine —
 // the site builds without related links until the task is first run.
-type RelatedRef = { slug: string; tip_number: number };
+type RelatedRef = { slug: string; tip_number: number; score?: number };
 let relatedIndex: Record<string, RelatedRef[]> = {};
 try {
   relatedIndex = JSON.parse(await Deno.readTextFile("_og/related.json"));
@@ -121,8 +121,11 @@ site.preprocess([".html"], (pages) => {
           .filter((s): s is string => !!s)
           .map((s) => tipBySlug.get(s)!)
         : (relatedIndex[slug] ?? [])
-          .map((r) => tipBySlug.get(r.slug))
-          .filter((r): r is TipRef => !!r);
+          .map((r) => {
+            const tip = tipBySlug.get(r.slug);
+            return tip ? { ...tip, score: r.score } : undefined;
+          })
+          .filter((r): r is TipRef & { score?: number } => !!r);
       data.relatedTips = refs;
     }
   }
