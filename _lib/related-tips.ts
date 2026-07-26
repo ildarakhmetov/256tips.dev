@@ -94,3 +94,12 @@ export function topKNeighbors(
   );
   return scored.slice(0, k);
 }
+
+/**
+ * Round a similarity score to 3 decimal places for the committed index —
+ * enough precision to compare neighbors, stable across recomputes (no float
+ * noise in diffs).
+ */
+export function roundScore(score: number): number {
+  return Math.round(score * 1000) / 1000;
+}

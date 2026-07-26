@@ -3,6 +3,7 @@ import {
   buildEmbeddingText,
   contentHash,
   cosineSimilarity,
+  roundScore,
   stripMarkdown,
   topKNeighbors,
 } from "./related-tips.ts";
@@ -68,4 +69,12 @@ Deno.test("topKNeighbors - ranks by similarity, excludes self, respects k", () =
 Deno.test("topKNeighbors - unknown slug returns empty", () => {
   const vectors = new Map<string, number[]>([["a", [1, 0]]]);
   assertEquals(topKNeighbors("missing", vectors, 3), []);
+});
+
+Deno.test("roundScore - rounds to 3 decimals", () => {
+  assertEquals(roundScore(0.51234), 0.512);
+  assertEquals(roundScore(0.5), 0.5);
+  assertEquals(roundScore(0.9995), 1);
+  assertEquals(roundScore(0), 0);
+  assertEquals(roundScore(-0.12345), -0.123);
 });
