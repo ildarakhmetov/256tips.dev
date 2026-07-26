@@ -8,13 +8,14 @@
 // new or changed; an all-cache-hit run needs no key and no network).
 //
 // Outputs:
-//   _og/related.json          committed — { "<slug>": [ { slug, tip_number } ] }
+//   _og/related.json          committed — { "<slug>": [ { slug, tip_number, score } ] }
 //   _og/.cache/tip-embeddings.json   gitignored — { "<slug>": { hash, embedding } }
 
 import {
   buildEmbeddingText,
   contentHash,
   type Neighbor,
+  roundScore,
   topKNeighbors,
 } from "../_lib/related-tips.ts";
 
@@ -152,11 +153,15 @@ for (const t of tips) vectors.set(t.slug, cache[t.slug].embedding);
 // --- Compute neighbors -----------------------------------------------------
 
 const tipNumberBySlug = new Map(tips.map((t) => [t.slug, t.tipNumber]));
-const index: Record<string, { slug: string; tip_number: number }[]> = {};
+const index: Record<
+  string,
+  { slug: string; tip_number: number; score: number }[]
+> = {};
 for (const t of tips) {
   index[t.slug] = topKNeighbors(t.slug, vectors, TOP_K).map((n: Neighbor) => ({
     slug: n.slug,
     tip_number: tipNumberBySlug.get(n.slug)!,
+    score: roundScore(n.score),
   }));
 }
 
