@@ -9,6 +9,7 @@ tags:
 - linux
 - tools
 - hardware
+youtube_url: "https://youtube.com/shorts/--6HLl9aIr0"
 url: /your-old-computer-is-enough/
 ---
 
