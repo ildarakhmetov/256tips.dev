@@ -69,6 +69,11 @@
   ],
   "buy-junk-from-facebook-marketplace": [
     {
+      "slug": "your-old-computer-is-enough",
+      "tip_number": 56,
+      "score": 0.609
+    },
+    {
       "slug": "deploy-your-project-three-ways",
       "tip_number": 40,
       "score": 0.591
@@ -77,11 +82,6 @@
       "slug": "work-with-a-legacy-codebase",
       "tip_number": 24,
       "score": 0.573
-    },
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96,
-      "score": 0.544
     }
   ],
   "deploy-your-project-three-ways": [
@@ -307,6 +307,11 @@
   ],
   "spend-a-day-with-keyboard-only": [
     {
+      "slug": "your-old-computer-is-enough",
+      "tip_number": 56,
+      "score": 0.539
+    },
+    {
       "slug": "see-where-procrastination-leads-you",
       "tip_number": 232,
       "score": 0.508
@@ -315,11 +320,6 @@
       "slug": "algorithms-in-everyday-things",
       "tip_number": 96,
       "score": 0.491
-    },
-    {
-      "slug": "work-with-a-legacy-codebase",
-      "tip_number": 24,
-      "score": 0.472
     }
   ],
   "think-about-yourself-in-1-2-5-10-50-years": [
@@ -456,6 +456,23 @@
       "slug": "play",
       "tip_number": 224,
       "score": 0.489
+    }
+  ],
+  "your-old-computer-is-enough": [
+    {
+      "slug": "buy-junk-from-facebook-marketplace",
+      "tip_number": 128,
+      "score": 0.609
+    },
+    {
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24,
+      "score": 0.541
+    },
+    {
+      "slug": "spend-a-day-with-keyboard-only",
+      "tip_number": 32,
+      "score": 0.539
     }
   ]
 }
