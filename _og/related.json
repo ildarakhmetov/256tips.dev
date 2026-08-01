@@ -222,6 +222,11 @@
   ],
   "find-a-mentor-be-a-mentor": [
     {
+      "slug": "find-your-big-hairy-audacious-goal",
+      "tip_number": 216,
+      "score": 0.482
+    },
+    {
       "slug": "think-about-yourself-in-1-2-5-10-50-years",
       "tip_number": 200,
       "score": 0.472
@@ -230,11 +235,6 @@
       "slug": "learn-in-your-plus-one-zone",
       "tip_number": 240,
       "score": 0.454
-    },
-    {
-      "slug": "dont-ignore-office-hours",
-      "tip_number": 160,
-      "score": 0.415
     }
   ],
   "have-fun-with-leetcode": [
@@ -473,6 +473,23 @@
       "slug": "spend-a-day-with-keyboard-only",
       "tip_number": 32,
       "score": 0.539
+    }
+  ],
+  "find-your-big-hairy-audacious-goal": [
+    {
+      "slug": "think-about-yourself-in-1-2-5-10-50-years",
+      "tip_number": 200,
+      "score": 0.559
+    },
+    {
+      "slug": "see-where-procrastination-leads-you",
+      "tip_number": 232,
+      "score": 0.517
+    },
+    {
+      "slug": "find-a-mentor-be-a-mentor",
+      "tip_number": 0,
+      "score": 0.482
     }
   ]
 }
