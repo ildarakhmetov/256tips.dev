@@ -9,6 +9,7 @@ tags:
 - career
 - mindset
 - junior-devs
+youtube_url: "https://youtube.com/shorts/cEiiG6tjyew"
 url: /find-your-big-hairy-audacious-goal/
 ---
 
