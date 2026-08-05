@@ -10,6 +10,7 @@ tags:
 - craft
 - tools
 - collaboration
+youtube_url: "https://youtube.com/shorts/LrMuoU0dTEM"
 url: /use-a-whiteboard/
 ---
 
