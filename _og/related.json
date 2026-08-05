@@ -266,9 +266,9 @@
       "score": 0.527
     },
     {
-      "slug": "think-about-yourself-in-1-2-5-10-50-years",
-      "tip_number": 200,
-      "score": 0.514
+      "slug": "use-a-whiteboard",
+      "tip_number": 184,
+      "score": 0.52
     }
   ],
   "learn-in-your-plus-one-zone": [
@@ -307,6 +307,11 @@
   ],
   "spend-a-day-with-keyboard-only": [
     {
+      "slug": "use-a-whiteboard",
+      "tip_number": 184,
+      "score": 0.543
+    },
+    {
       "slug": "your-old-computer-is-enough",
       "tip_number": 56,
       "score": 0.539
@@ -315,11 +320,6 @@
       "slug": "see-where-procrastination-leads-you",
       "tip_number": 232,
       "score": 0.508
-    },
-    {
-      "slug": "algorithms-in-everyday-things",
-      "tip_number": 96,
-      "score": 0.491
     }
   ],
   "think-about-yourself-in-1-2-5-10-50-years": [
@@ -490,6 +490,23 @@
       "slug": "find-a-mentor-be-a-mentor",
       "tip_number": 0,
       "score": 0.482
+    }
+  ],
+  "use-a-whiteboard": [
+    {
+      "slug": "algorithms-in-everyday-things",
+      "tip_number": 96,
+      "score": 0.58
+    },
+    {
+      "slug": "work-with-a-legacy-codebase",
+      "tip_number": 24,
+      "score": 0.568
+    },
+    {
+      "slug": "dont-build-alone",
+      "tip_number": 192,
+      "score": 0.567
     }
   ]
 }
