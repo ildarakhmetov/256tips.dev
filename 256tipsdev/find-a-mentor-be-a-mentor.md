@@ -18,8 +18,14 @@ There is a pyramid of mentorship:
 1. Someone out there can be a great mentor for you
 2. YOU can be a great mentor for someone else
 
+![Hand-drawn pyramid with three tiers: someone who can be your mentor at the top, you circled in red in the middle, someone who needs you as a mentor below](/assets/img/tips/find-a-mentor-be-a-mentor/pyramid.png)
+
 Don't think that anyone who is older, or has more experience, automatically qualifies as a mentor. Think about yourself in 10 or 20 years from now -- think about where you would like to be. Your mentor is someone who is already *there*. They might not have a detailed step by step guide for you to get there, but they can tell you how they did.
 
+![Hand-drawn timeline from NOW to +20 years: you at the start, your mentor already standing at the red star at the end, connected by a wandering trail of footsteps](/assets/img/tips/find-a-mentor-be-a-mentor/timeline-forward.png)
+
 Now, if you can learn from your mentor, someone out there can learn from *you*. Think about where you are now. You may think that it's not much -- it's always hard for us to appreciate the present moment. But think back: where were you a few years ago? Maybe you were dreaming of being exactly where you are now. And you made it.
+
+![Hand-drawn timeline looking back: a smaller figure five years ago dreaming of a red star, and you standing on that star NOW, at the end of a wandering trail of footsteps](/assets/img/tips/find-a-mentor-be-a-mentor/timeline-back.png)
 
 Now, there is someone else out there with a dream. And you can guide them.
